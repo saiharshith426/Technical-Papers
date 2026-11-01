@@ -83,4 +83,79 @@ Example:
 Here, Sparrow can fly, but Penguin cannot. So, we keep flying behaviour in a seperate class instead of forcing every bird to implement it.
 This helps us in avoiding unexpected changes and behaviour when using inheritance.
 
+## 4.Interface Segregation Principle
+This principles tells us that **one should build small, focused interfaces that do not force the client to implement behavior they do not need.**
+A class should not be force to implement methods it does not need which means instead of one large interface, we can create smaller interfaces for different functionalities.
+
+Example:
+          interface Printer {
+              void print();
+          }
+          
+          interface Scanner {
+              void scan();
+          }
+          
+          class SimplePrinter implements Printer {
+              public void print() {
+                  System.out.println("Printing");
+              }
+          }
+          
+          class MultiFunctionPrinter implements Printer, Scanner {
+              public void print() {
+                  System.out.println("Printing");
+              }
+          
+              public void scan() {
+                  System.out.println("Scanning");
+              }
+          }
+
+Here, A simple printer only implements printing, while a multifunction printer implements both printing and scanning.
+This helps us in avoiding unnecessary methods in classes.
+
+## 5.Dependency Inversion Principle:
+This principles tells us that **High-level classes should depend on abstractions rather than specific implementations.**
+High-level modules should not depend on low-level modules, instead we can use interface which makes it easier to change implementations.
+
+Example:
+
+          interface MessageService {
+              void sendMessage();
+          }
+          
+          class EmailService implements MessageService {
+              public void sendMessage() {
+                  System.out.println("Sending email");
+              }
+          }
+          
+          class SmsService implements MessageService {
+              public void sendMessage() {
+                  System.out.println("Sending SMS");
+              }
+          }
+          
+          class Notification {
+              MessageService service;
+          
+              Notification(MessageService service) {
+                  this.service = service;
+              }
+          
+              void notifyUser() {
+                  service.sendMessage();
+              }
+          }
+
+Here, Notification depends on the MessageService interface not directly on EmailService or SmsService. We can pass either EmailService or SmsService without modifying the Notification class.
+This helps us in making code flexible and reduces dependencies.
+
+
+# Conclusion:
+
+SOLID principles help us write better and cleaner code. They make our code easier to understand and work with, especially when a project gets bigger. They also help us make changes and add new features without making the code complicated.
+
+
 
