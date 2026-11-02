@@ -163,3 +163,9 @@ SOLID principles help us write better and cleaner code. They make our code easie
 
 
 
+## References
+
+SOLID Principles in java: https://www.freecodecamp.org/news/introduction-to-solid-principles/
+
+
+
