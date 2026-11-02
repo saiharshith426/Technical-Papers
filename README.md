@@ -4,7 +4,7 @@ SOLID Principles are one of the most important design principles which helps dev
 These SOLID Principles are introduced by Robert C. Martin, an american software engineer known for his promotions of some great software design principles. \
 The term SOLID is an acronym (an abbreviation formed from parts of words) for five design principles that one should follow to make software designs more understandable, flexible and maintainable. 
 
-SOLID Stands for:
+SOLID Stands for: \
 1.S-Single Responsibility Principle(SRP) \
 2.O-Open/Closed principle(OCP) \
 3.L-Liskov Substitution Principle(LSP) \
