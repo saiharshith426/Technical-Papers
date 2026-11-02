@@ -1,15 +1,15 @@
 # SOLID Principles 
 
-SOLID Principles are one of the most important design principles which helps developers manage most of the software desgin problems. \
+SOLID Principles are one of the most important design principles which helps developers manage most of the software desgin problems. 
 These SOLID Principles are introduced by Robert C. Martin, an american software engineer known for his promotions of some great software design principles. \
-The term SOLID is an acronym (an abbreviation formed from parts of words) for five design principles that one should follow to make software designs more understandable, flexible and maintainable. \
+The term SOLID is an acronym (an abbreviation formed from parts of words) for five design principles that one should follow to make software designs more understandable, flexible and maintainable. 
 
 SOLID Stands for:
 1.S-Single Responsibility Principle(SRP) \
 2.O-Open/Closed principle(OCP) \
 3.L-Liskov Substitution Principle(LSP) \
 4.I-Interface Segregation Principle(ISP) \
-5.D-Dependency Inversion Principle(DIP) \
+5.D-Dependency Inversion Principle(DIP) 
 
 The main goal of these principles is to reduce code complexity and make software easier to modify, test and maintain for long term.
 
@@ -18,6 +18,7 @@ This principle states that **A class should have one and only one reason to chan
 Each class should have their own tasks instead of doing multiple things that are unrelated.
 
 Example:
+
           class Employee {
               void calculateSalary() {
                   System.out.println("Calculating salary");
@@ -38,6 +39,7 @@ This principle tells us that **Objects or entities should be open for extension 
 We should be able to add new features without changing existing working code.
 
 Example:
+
           interface Payment {
               void pay();
           }
@@ -62,6 +64,7 @@ This principle tells us that **one must be able to replace a superclass object w
 A child class should follow the expected behaviour of its parent class.
 
 Example:
+
           class Bird {
               void eat() {
                   System.out.println("Bird is eating");
@@ -88,6 +91,7 @@ This principles tells us that **one should build small, focused interfaces that 
 A class should not be force to implement methods it does not need which means instead of one large interface, we can create smaller interfaces for different functionalities.
 
 Example:
+
           interface Printer {
               void print();
           }
