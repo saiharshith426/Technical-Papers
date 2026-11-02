@@ -1,15 +1,15 @@
 # SOLID Principles 
 
-SOLID Principles are one of the most important design principles which helps developers manage most of the software desgin problems.
-These SOLID Principles are introduced by Robert C. Martin, an american software engineer known for his promotions of some great software design principles.
-The term SOLID is an acronym (an abbreviation formed from parts of words) for five design principles that one should follow to make software designs more understandable, flexible and maintainable.
+SOLID Principles are one of the most important design principles which helps developers manage most of the software desgin problems. \
+These SOLID Principles are introduced by Robert C. Martin, an american software engineer known for his promotions of some great software design principles. \
+The term SOLID is an acronym (an abbreviation formed from parts of words) for five design principles that one should follow to make software designs more understandable, flexible and maintainable. \
 
 SOLID Stands for:
-1.S-Single Responsibility Principle(SRP)
-2.O-Open/Closed principle(OCP)
-3.L-Liskov Substitution Principle(LSP)
-4.I-Interface Segregation Principle(ISP)
-5.D-Dependency Inversion Principle(DIP)
+1.S-Single Responsibility Principle(SRP) \
+2.O-Open/Closed principle(OCP) \
+3.L-Liskov Substitution Principle(LSP) \
+4.I-Interface Segregation Principle(ISP) \
+5.D-Dependency Inversion Principle(DIP) \
 
 The main goal of these principles is to reduce code complexity and make software easier to modify, test and maintain for long term.
 
@@ -153,7 +153,7 @@ Here, Notification depends on the MessageService interface not directly on Email
 This helps us in making code flexible and reduces dependencies.
 
 
-# Conclusion:
+# Conclusion
 
 SOLID principles help us write better and cleaner code. They make our code easier to understand and work with, especially when a project gets bigger. They also help us make changes and add new features without making the code complicated.
 
